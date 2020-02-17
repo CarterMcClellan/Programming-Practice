@@ -15,12 +15,17 @@
 ### Complexity
 |          | Complexity | Alternatives |
 |----------|------------|--------------|
-| append   | O(N)       |              |
-| insert   | O(N)       |              |
-| pop last | O(1)       |              |
+| append   | O(N)       | heapq        |
+| insert   | O(N)       | heapq        |
+| pop last | O(1)       | heapq        |
 | sort     | O(N log N) | sorted       |
 | reverse  | O(N)       | reversed     |
 | copy     | O(N)       | deep copy    |
 | in       | O(N)       |              |
 | min, max | O(N)       |              |
 | len      | O(1)       |              |
+
+### Intuition
+- Maximize/ Minimize = Dynamic Programming
+- Generate = Backtracking/ Dfs
+- Subarray = Windowing/ Prefix Sum
