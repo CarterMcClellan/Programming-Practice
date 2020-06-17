@@ -1,3 +1,0 @@
-#### Palindrome
-
-#### Parens
