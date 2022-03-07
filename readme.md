@@ -29,13 +29,3 @@ To start solving this we need some kind of decision tree to show how one gets fr
 │   └── Dijkstra
 ├── ...
 ```
-
-## Trivia
-The more you know about Python the easier it is to work with. Knowing Python breaks up into a couple different pieces
-```
-trivia
-├── fundamentals
-├── numerical
-├── standard lib
-└── web
-```
