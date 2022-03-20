@@ -76,4 +76,3 @@
 | Heap                | Hard         | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)                                                                                      |
 | Heap                | Medium       | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                                                                                |
 | Heap                | Hard         | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)                                                                      |
-| nan                 | Hard         | nan                                                                                                                                                              |
