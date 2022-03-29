@@ -13,6 +13,7 @@ def is_complete(problem_name, dir_name):
     problem_name = problem_name.replace("(", "").replace(")", "").replace("/", "")
     if os.path.exists(os.path.join(dir_name, problem_name + ext)):
         return "✔️"
+
     return "❌"
 
 full_doc = "# Blind 75 Practice Problems"
