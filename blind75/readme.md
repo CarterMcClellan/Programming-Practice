@@ -26,7 +26,7 @@
 
 |    | Difficulty   | Link                                                                                            |    |
 |---:|:-------------|:------------------------------------------------------------------------------------------------|:---|
-| 15 | Easy         | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                               | ❌ |
+| 15 | Easy         | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                               | ✔️  |
 | 21 | Easy         | [House Robber](https://leetcode.com/problems/house-robber/)                                     | ❌ |
 | 16 | Medium       | [Coin Change](https://leetcode.com/problems/coin-change/)                                       | ❌ |
 | 17 | Medium       | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | ❌ |
