@@ -11,7 +11,7 @@ def is_complete(problem_name, dir_name):
 
     problem_name = problem_name.lower().replace(" ", "_")
     problem_name = problem_name.replace("(", "").replace(")", "").replace("/", "")
-    print(problem_name)
+    # print(problem_name)
     if os.path.exists(os.path.join(dir_name, problem_name + ext)):
         return "✔️"
 
