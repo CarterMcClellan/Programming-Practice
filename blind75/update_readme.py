@@ -1,18 +1,18 @@
 import pandas as pd
 import os
 
-def is_complete(problem_name, dir_name):
-    if dir_name == "python":
+def is_complete(problem_name, programming_language, category):
+    if programming_language == "python":
         ext = ".py"
-    elif dir_name == "cpp":
+    elif programming_language == "cpp":
         ext = ".cpp"
     else:
         raise Exception("Invalid Extension")
 
     problem_name = problem_name.lower().replace(" ", "_")
-    problem_name = problem_name.replace("(", "").replace(")", "").replace("/", "")
-    # print(problem_name)
-    if os.path.exists(os.path.join(dir_name, problem_name + ext)):
+    problem_name = problem_name.replace("(", "").replace(")", "").replace("/", "") + ext
+    
+    if os.path.exists(os.path.join(programming_language, category, problem_name)):
         return "✔️"
 
     return "❌"
@@ -32,7 +32,7 @@ for group, gdf in df.groupby("Category"):
     del gdf["Proxy"]
 
     # Check wheter Problem has been solved
-    gdf[""] = gdf.Name.map(lambda x: is_complete(x, "python"))
+    gdf[""] = gdf.Name.map(lambda x: is_complete(problem_name=x, programming_language="python", category=group))
     del gdf["Name"] # name is already stored in "Link", we dont need it twice
     
     # Check whether the problem has been completed
