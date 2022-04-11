@@ -1,5 +1,5 @@
-import pandas as pd
 import os
+import pandas as pd
 
 def is_complete(problem_name, programming_language, category):
     if programming_language == "python":
@@ -21,6 +21,7 @@ full_doc = "# Blind 75 Practice Problems"
 df = pd.read_csv("problems.csv", usecols=["Category", "Name", "Difficulty", "Link"])
 
 kw_map = {"Easy": 0, "Medium": 1, "Hard": 2}
+# TODO incorporate programming language
 for group, gdf in df.groupby("Category"):
     # Tables are grouped by Category, we do not need
     # to keep this column
@@ -37,7 +38,14 @@ for group, gdf in df.groupby("Category"):
     
     # Check whether the problem has been completed
     table = gdf.to_markdown()
-    full_doc += f"\n## {group}\n\n{table}"
 
-with open("readme.md", "w") as f:
+    # Document Describing problems solved under this domain
+    curr_doc = f"\n## {group}\n\n{table}"
+
+    with open(f"python/{group}/readme.md", "w") as f:
+        f.write(curr_doc)
+
+    full_doc += f"\n- [{group}][!{group}/readme.md]"
+
+with open(f"./readme.md", "w") as f:
     f.write(full_doc)
