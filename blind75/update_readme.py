@@ -41,11 +41,15 @@ for group, gdf in df.groupby("Category"):
 
     # Document Describing problems solved under this domain
     curr_doc = f"\n## {group}\n\n{table}"
-
+    
     with open(f"python/{group}/readme.md", "w") as f:
         f.write(curr_doc)
+    
+    group_link = group
+    if " " in group_link:
+        group_link = group.replace(" ", "%20")
 
-    full_doc += f"\n- [{group}][!{group}/readme.md]"
+    full_doc += f"\n- [{group}](!{group_link}/readme.md)"
 
 with open(f"./readme.md", "w") as f:
     f.write(full_doc)

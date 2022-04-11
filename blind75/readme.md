@@ -1,11 +1,11 @@
 # Blind 75 Practice Problems
-- [Arrays][!Arrays/readme.md]
-- [Binary][!Binary/readme.md]
-- [Dynamic Programming][!Dynamic Programming/readme.md]
-- [Graph][!Graph/readme.md]
-- [Heap][!Heap/readme.md]
-- [Interval][!Interval/readme.md]
-- [Linked List][!Linked List/readme.md]
-- [Matrix][!Matrix/readme.md]
-- [String][!String/readme.md]
-- [Tree][!Tree/readme.md]
+- [Arrays](!Arrays/readme.md)
+- [Binary](!Binary/readme.md)
+- [Dynamic Programming](!Dynamic%20Programming/readme.md)
+- [Graph](!Graph/readme.md)
+- [Heap](!Heap/readme.md)
+- [Interval](!Interval/readme.md)
+- [Linked List](!Linked%20List/readme.md)
+- [Matrix](!Matrix/readme.md)
+- [String](!String/readme.md)
+- [Tree](!Tree/readme.md)
