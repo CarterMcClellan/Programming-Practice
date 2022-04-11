@@ -49,7 +49,7 @@ for group, gdf in df.groupby("Category"):
     if " " in group_link:
         group_link = group.replace(" ", "%20")
 
-    full_doc += f"\n- [{group}](!{group_link}/readme.md)"
+    full_doc += f"\n- [{group}](!python/{group_link})"
 
 with open(f"./readme.md", "w") as f:
     f.write(full_doc)
